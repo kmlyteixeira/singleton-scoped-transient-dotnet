@@ -3,6 +3,10 @@
 This repository is reserved to provide an explanation of the three types of lifecycles modes used in Dependency Injection, in this case w/ .NET Core. 
 The modes are **Singleton**, **Scoped** and **Transient**.
 
+## 👀 Overview 
+![image](https://github.com/kmlyteixeira/singleton-scoped-transient-dotnet/assets/101020416/d3eed999-9e46-419a-8fbc-3250f5fec9af)
+
+
 ### Singleton
 - Only one service instance was created during the app lifecycle. 
 - All requests to obtain this object will return the same instance. 
@@ -20,9 +24,7 @@ The modes are **Singleton**, **Scoped** and **Transient**.
 
 ## :sparkles: Hands On!
 
-In this small project, you'll find three endpoints: 
-
-![image](https://github.com/kmlyteixeira/singleton-scoped-transient-dotnet/assets/101020416/69746d8e-9f97-49c1-b90b-9d56872567e3)
+In this small project, you'll find three endpoints
 
 In each of them, a **service** with a specific **lifecycle mode** was registered and this simple service **returns the creation date of the object instance**.
 
