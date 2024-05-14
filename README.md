@@ -22,7 +22,7 @@ The modes are **Singleton**, **Scoped** and **Transient**.
 
 In this small project, you'll find three endpoints: 
 
-// image here
+![image](https://github.com/kmlyteixeira/singleton-scoped-transient-dotnet/assets/101020416/69746d8e-9f97-49c1-b90b-9d56872567e3)
 
 In each of them, a **service** with a specific **lifecycle mode** was registered and this simple service **returns the creation date of the object instance**.
 
@@ -70,9 +70,15 @@ Response body
 
 ### :runner: Installing and Running
 
-1.  Clone this repo: 
+1.  Clone this repo: https://github.com/kmlyteixeira/singleton-scoped-transient-dotnet
 2.  Run `dotnet build` to build this project
 3.  Run `dotnet run`
 4.  Open `http://localhost:5225/swagger` and **be happy** :)
 
 ## :books: __Learn more__
+
+:one: [Dependency injection in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection?view=aspnetcore-8.0)
+
+:two: [Singleton Design Pattern](https://refactoring.guru/design-patterns/singleton)
+
+3️⃣ [Differences Between Scoped, Transient, And Singleton Service](https://www.c-sharpcorner.com/article/differences-between-scoped-transient-and-singleton-service/)
