@@ -3,8 +3,6 @@ using Dtos;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -24,7 +22,6 @@ app.UseHttpsRedirection();
 
 app.MapGet("/singleton", async (ISingletonService service) =>
 {
-    // An only instance of SingletonService is created and shared across all requests
     return new SingletonResponseDto { CreationDateTime = service.GetDateTime().ToString("yyyy-MM-dd HH:mm:ss.fff") };
 })
 .WithName("GetSingleton")
