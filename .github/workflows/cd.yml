@@ -22,6 +22,11 @@ jobs:
         run: |
           dotnet publish -c Release -o publish
 
+      - name: login azure
+        uses: azure/login@v1
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
       - name: deploy azure
         uses: azure/webapps-deploy@v2
         with:
